@@ -1,0 +1,39 @@
+.processor, .controller, .sensor, .peripheral{
+    width:150px;
+    height:150px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.connection{
+width:100px;
+height:100px;
+margin-top: 50px;
+margin-left: 50px;
+}
+
+
+
+.containericon .dynamicicon{
+    overflow: hidden;
+    height:200px;
+    width: 250px;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+.dynamicicon li{
+    list-style: none;
+    font-size: 60px;
+    font-weight:500;
+    color:#42cef5;
+    position: relative;
+    top:0;
+    animation: slide2 15s steps(5) infinite;
+}
+@keyframes slide2 {
+    100%{
+        top:-1000px;
+    }
+    
+}

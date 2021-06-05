@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import TopNav from './TopNav';
+import TextRender from './TextRender.js'
+import IconBar from './iconBar.js'
+// import ContactUs from './ContactUs.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+  <div className="container">
+    <div className="first"> <TopNav/> </div>
+    <div className="second"> <TextRender/> </div>  
+    <div className="third"><IconBar/></div>
+    {/* <div className="fourth"><ContactUs/></div> *      make it for creating the contact bar */}
+    </div>
+    <div className="container-scroll-1">
+    <div className="scroll-1">Scroll Down for</div>
+    <div className="scroll-2">MicroControllers.</div>
+    </div>
     </div>
   );
 }
